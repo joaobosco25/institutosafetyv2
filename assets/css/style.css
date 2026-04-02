@@ -68,6 +68,12 @@ iframe{border:0;width:100%}
   
 }
 
+.container-vantagens {
+  width:min(100% - 32px, var(--container));
+  margin-inline:auto;
+  
+}
+
 .site-header{
   position:sticky;
   top:0;
@@ -323,7 +329,9 @@ iframe{border:0;width:100%}
   padding:70px 0;
   overflow:hidden;
 }
-.section--features{padding-top:0}
+.section--features{
+  padding-top:0;
+}
 .eyebrow{
   margin:0 0 10px;
   color:var(--color-primary);
@@ -384,6 +392,8 @@ iframe{border:0;width:100%}
   line-height:30px;
 }
 
+
+
 .about-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -435,7 +445,6 @@ iframe{border:0;width:100%}
   margin-top:10px;
   display:flex;
   justify-content:center;
-  border: 2px solid violet;
 }
 
 
@@ -443,7 +452,6 @@ iframe{border:0;width:100%}
   width:230px;
   max-width:100%;
   margin:0 auto;
-  border: 2px solid red;
 }
 .tooltip-toggle{
   position:absolute;
@@ -634,10 +642,13 @@ iframe{border:0;width:100%}
   height:100%;
 }
 
-.section--cta .container{display:flex;justify-content:center}
+.section--cta .container .container-vantagens{display:flex;justify-content:center}
 .cta-panel{
   padding:70px 0;
   text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cta-panel h2{
   max-width:950px;
@@ -648,6 +659,7 @@ iframe{border:0;width:100%}
   font-weight:700;
   line-height:56px;
   text-transform:capitalize;
+  text-align: center;
 }
 
 .site-footer{
@@ -816,8 +828,33 @@ iframe{border:0;width:100%}
   .hero-slide__title{font-size:46px;line-height:1.15}
   .section-title{font-size:48px;line-height:1.2}
   .feature-card{flex-direction:column;gap:16px}
-  .feature-card__icon{flex-basis:auto;max-width:260px}
+  .feature-card__icon {flex-basis:auto;max-width:260px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;}
   .about-grid__content{padding-left:24px}
+
+  .about-grid__content{
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.lead {
+  text-align: center;
+}
+}
+
+@media (max-width: 768px) {
+  .section--features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centraliza horizontalmente */
+    justify-content: center;  /* alinha no eixo vertical da pilha */
+    text-align: center;       /* opcional, se quiser texto centralizado */
+  }
 }
 
 @media (max-width: 1024px){
@@ -864,6 +901,14 @@ iframe{border:0;width:100%}
   .about-grid{grid-template-columns:1fr}
   .about-grid__content{padding-left:0}
   .site-footer .container{padding:40px 10px 20px}
+  .container-vantagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
+ 
   .site-footer__top{padding-bottom:50px}
   .site-footer__column--brand,
   .site-footer__column{padding-right:0}
