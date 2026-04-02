@@ -1,0 +1,450 @@
+/* ===================================================
+   TEMA HELLO-ELEMENTOR - Instituto Safety
+   Baseado no tema hello-elementor v3.0.2
+   =================================================== */
+
+/* Reset e Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #7A7A7A;
+    background-color: #fff;
+}
+
+/* Variáveis globais do tema */
+:root {
+    --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #61CE70;
+    --e-global-color-9532f99: #0D9276;
+    --e-global-typography-primary-font-family: "Roboto";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 999;
+    padding: 8px;
+    background: #000;
+    color: #fff;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header */
+.page-header {
+    display: none;
+}
+
+/* Site main */
+.site-main {
+    display: block;
+}
+
+/* Elementor base */
+.elementor-section {
+    position: relative;
+}
+
+.elementor-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1140px;
+}
+
+.elementor-column {
+    position: relative;
+    min-height: 1px;
+    display: flex;
+}
+
+.elementor-widget-wrap {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    display: flex;
+}
+
+.elementor-widget-wrap > .elementor-element {
+    width: 100%;
+}
+
+.elementor-element-populated {
+    padding: 10px;
+}
+
+/* Elementor columns */
+.elementor-col-100 { width: 100%; }
+.elementor-col-50 { width: 50%; }
+.elementor-col-33 { width: 33.333%; }
+.elementor-col-25 { width: 25%; }
+.elementor-col-66 { width: 66.666%; }
+
+/* Elementor section content middle */
+.elementor-section-content-middle > .elementor-container > .elementor-column > .elementor-widget-wrap {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Elementor section boxed */
+.elementor-section-boxed > .elementor-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Elementor column gap */
+.elementor-column-gap-no > .elementor-column > .elementor-element-populated {
+    padding: 0;
+}
+
+/* Elementor widget */
+.elementor-widget:not(:last-child) {
+    margin-block-end: 20px;
+}
+
+/* Elementor heading */
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-] > a {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Elementor image */
+.elementor-widget-image {
+    text-align: center;
+}
+
+.elementor-widget-image a {
+    display: inline-block;
+}
+
+.elementor-widget-image a img {
+    width: 100%;
+}
+
+.elementor-widget-image img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Elementor button */
+.elementor-button-wrapper {
+    text-align: center;
+}
+
+.elementor-button {
+    display: inline-block;
+    line-height: 1;
+    background-color: #818a91;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.elementor-button:hover {
+    color: #fff;
+    background-color: #6b757d;
+    text-decoration: none;
+}
+
+.elementor-button .elementor-button-content-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.elementor-button .elementor-button-text {
+    flex-grow: 1;
+    order: 10;
+    display: inline-block;
+}
+
+/* Elementor icon list */
+.elementor-icon-list-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.elementor-icon-list-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.elementor-icon-list-item > a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.elementor-icon-list-icon {
+    display: flex;
+    position: relative;
+    top: 1px;
+}
+
+.elementor-icon-list-text {
+    flex-grow: 1;
+    padding-left: 5px;
+}
+
+/* Elementor social icons */
+.elementor-social-icons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elementor-social-icon {
+    display: inline-flex;
+    background-color: #818a91;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    transition: all 0.3s;
+    color: #fff;
+    font-size: 1em;
+    margin: 2px;
+}
+
+.elementor-social-icon:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+.elementor-social-icon-linkedin-in { background-color: #0077b5; }
+.elementor-social-icon-youtube { background-color: #ff0000; }
+.elementor-social-icon-instagram { background-color: #e1306c; }
+
+/* Elementor divider */
+.elementor-divider {
+    line-height: 0;
+    font-size: 0;
+}
+
+.elementor-divider-separator {
+    display: flex;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+}
+
+/* Elementor text editor */
+.elementor-text-editor {
+    line-height: 1.6;
+}
+
+/* Elementor video */
+.elementor-fit-aspect-ratio {
+    position: relative;
+    overflow: hidden;
+}
+
+.elementor-video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Elementor inner section */
+.elementor-inner-section > .elementor-container {
+    flex-wrap: wrap;
+}
+
+/* Elementor section full width */
+.elementor-section-full_width > .elementor-container {
+    max-width: 100%;
+}
+
+/* Elementor section height default */
+.elementor-section-height-default {
+    height: auto;
+}
+
+/* Sticky header */
+#header_section {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s;
+}
+
+/* Footer section */
+#footer_section {
+    background-color: #f8f9fa;
+}
+
+/* Elementor animations */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Swiper slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 767px) {
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 767px;
+    }
+    
+    .elementor-col-33,
+    .elementor-col-50,
+    .elementor-col-25,
+    .elementor-col-66 {
+        width: 100%;
+    }
+}
+
+/* Elementor kit classes */
+.elementor-kit-7 {
+    --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #61CE70;
+    --e-global-color-9532f99: #0D9276;
+}
+
+/* Font Awesome paths fix */
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('../fonts/webfonts/fa-solid-900.woff2') format('woff2'),
+         url('../fonts/webfonts/fa-solid-900.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('../fonts/webfonts/fa-regular-400.woff2') format('woff2'),
+         url('../fonts/webfonts/fa-regular-400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('../fonts/webfonts/fa-brands-400.woff2') format('woff2'),
+         url('../fonts/webfonts/fa-brands-400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'eicons';
+    src: url('../fonts/eicons/eicons.woff2?5.31.0') format('woff2'),
+         url('../fonts/eicons/eicons.woff?5.31.0') format('woff'),
+         url('../fonts/eicons/eicons.ttf?5.31.0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
