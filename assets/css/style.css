@@ -408,6 +408,7 @@ iframe{border:0;width:100%}
   position:relative;
   background:transparent;
   text-align:center;
+  border: 3px solid blue;
 }
 .standard-card__visual img{
   width:130px;
@@ -434,11 +435,15 @@ iframe{border:0;width:100%}
   margin-top:10px;
   display:flex;
   justify-content:center;
+  border: 2px solid violet;
 }
+
+
 .standard-card__info-strip{
   width:230px;
   max-width:100%;
   margin:0 auto;
+  border: 2px solid red;
 }
 .tooltip-toggle{
   position:absolute;
