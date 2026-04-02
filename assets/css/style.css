@@ -867,7 +867,39 @@ flex-direction: column;
     gap:16px;
   }
   .site-nav{justify-content:flex-end}
-  .site-nav__toggle{display:inline-flex}
+  .site-nav__toggle {
+    display: flex;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background: #050404;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #030303;
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
   .site-nav__menu{
     position:absolute;
     top:calc(100% + 1px);
