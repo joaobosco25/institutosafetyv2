@@ -121,6 +121,7 @@ iframe{border:0;width:100%}
   color:var(--color-dark);
   transition:color .3s ease;
 }
+
 .site-nav__menu a:hover,
 .site-nav__menu a.is-active{color:var(--color-primary)}
 .site-nav__toggle{
@@ -342,7 +343,19 @@ iframe{border:0;width:100%}
   line-height:30px;
   text-transform:uppercase;
 }
-.eyebrow--center{text-align:center}
+.eyebrow--center{
+  text-align:center;
+  }
+
+  .eyebrow--center-pratica {
+  text-align:center;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 45px;
+  }
+
 .section-title{
   margin:0;
   color:var(--color-dark);
@@ -845,6 +858,12 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 }
+
+  .eyebrow--center-pratica {
+    display: flex;
+    font-size: 80px;
+    padding: 10px;
+  }
 
 .lead {
   text-align: center;
