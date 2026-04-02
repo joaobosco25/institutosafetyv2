@@ -588,6 +588,27 @@ iframe{border:0;width:100%}
   text-align:center;
 }
 
+.training-card__action-final{
+  margin-top:12px;
+  text-align:center;
+  height: 100px;
+}
+
+.button--pill-final{
+  padding:12px 20px;
+  border-radius:20px;
+  background:var(--color-dark);
+  color:#fff;
+  font-family:"Inter",sans-serif;
+  font-size:14px;
+  font-weight:500;
+  text-transform:uppercase;
+  height: 80px;
+}
+.button--pill-final:hover{transform:translateY(-3px)}
+
+
+
 .section--video .eyebrow,
 .section--video .section-title{text-align:center}
 .video-frame{
