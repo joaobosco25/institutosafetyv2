@@ -270,8 +270,6 @@ iframe{border:0;width:100%}
   text-transform:uppercase;
   animation:fadeInRight .9s ease both;
   color: var(--color-primary); /* Cor de preenchimento da letra */
-    -webkit-text-stroke-width: 1px; /* Largura do contorno */
-    -webkit-text-stroke-color: #000000;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 .hero-slide__title{
@@ -283,7 +281,6 @@ iframe{border:0;width:100%}
   text-transform:uppercase;
   animation:fadeInRight 1.05s ease both;
   color: var(--color-primary);
-  -webkit-text-stroke: 1px black;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 .hero-slide__button{
