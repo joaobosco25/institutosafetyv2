@@ -274,11 +274,10 @@ iframe{border:0;width:100%}
 }
 .hero-slide__title{
   margin:0;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size:50px;
   font-weight:700;
   line-height:80px;
-  text-transform:uppercase;
   animation:fadeInRight 1.05s ease both;
   color: white;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
@@ -287,12 +286,12 @@ iframe{border:0;width:100%}
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  margin-top:24px;
+  margin-top:80px;
   padding:16px 34px;
-  border:1px solid var(--color-primary);
+  border:1px solid rgba(128, 128, 128, 0.781);
   border-radius:100px;
-  background-color:var(--color-primary);
-  color:#fff;
+  background-color:#ffffffb2;
+  color:#000000;
   font-family:"Inter",sans-serif;
   font-size:20px;
   font-weight:500;
@@ -304,9 +303,9 @@ iframe{border:0;width:100%}
   animation:fadeInRight 1.2s ease both;
 }
 .hero-slide__button:hover{
-  background-color:#fff;
-  border-color:#fff;
-  color:var(--color-dark);
+  background-color:var(--color-primary);
+  border:1px solid rgba(128, 128, 128, 0.781);
+  color: white;
 }
 .hero-slider__pagination{
   position:absolute;
@@ -969,7 +968,8 @@ flex-direction: column;
   .hero-slide__content{max-width:100%}
   .hero-slide__eyebrow{font-size:18px;line-height:24px}
   .hero-slide__title{font-size:36px;line-height:40px}
-  .hero-slide__button{font-size:16px;line-height:20px;padding:14px 28px}
+  .hero-slide__button{font-size:16px;line-height:20px;padding:14px 28px;
+  margin-top: 25px;}
   .features-grid,
   .standards-grid,
   .trainings-grid,
