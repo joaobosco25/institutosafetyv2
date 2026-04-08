@@ -269,7 +269,7 @@ iframe{border:0;width:100%}
   line-height:33px;
   text-transform:uppercase;
   animation:fadeInRight .9s ease both;
-  color: var(--color-primary); /* Cor de preenchimento da letra */
+  color: white; /* Cor de preenchimento da letra */
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 .hero-slide__title{
@@ -280,7 +280,7 @@ iframe{border:0;width:100%}
   line-height:80px;
   text-transform:uppercase;
   animation:fadeInRight 1.05s ease both;
-  color: var(--color-primary);
+  color: white;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 .hero-slide__button{
